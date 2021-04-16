@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{pred_output}}</title>
+
+<style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --secondary-color: #151226;
+  --contrast-color: #BF307F;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: var(--contrast-color);
+}
+
+.container {
+  display: flex;
+  height:auto;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand .8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .8s ease;
+}
+
+.container_content {
+ width: 50%;
+}
+
+.container_content_inner {
+  width: 80%;
+  margin-left: 80px;
+}
+
+.container_outer_img {
+  margin: 50px;
+  width: 50%;
+  overflow: hidden;
+}   
+    
+.container_img {
+  width: 100%;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.par {
+  height: auto;
+  overflow: hidden;
+}
+
+p{
+  line-height: 30px;
+  transform: translateY(300px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+.btns {
+  height: 100%;
+  position: relative;
+  width: 150px;
+  overflow: hidden;
+}
+
+.btns_more {
+  background: transparent;
+  border: 1px solid var(--contrast-color);
+  border-radius: 50px;
+  padding: 8px 12px;
+  color: #BF307F;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 15px;
+  outline: none;
+  transform: translateY(50px);
+  animation: slideUp .8s ease-in-out  forwards 1s;
+}
+
+.title {
+  overflow: hidden;
+  height: auto;
+}
+
+h2 {
+    font-size: 25px;
+    color: var(--contrast-color);
+    margin-bottom: 20px;
+    transform: translateY(100px);
+    animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class= 'container'>
+<div class="container_content">
+
+<div class="title">
+  <h1>{{ pred_output }}</h1>
+<br>
+<br>
+<br>  
+</div>
+<div class="par">
+<h2>Introduction</h2>
+
+<p>
+The two-spotted spider mite is the most common mite species that attacks vegetable and fruit crops in New England. Spider mites can occur in tomato, eggplant, potato, vine crops such as melons, cucumbers, and other crops. Two-spotted spider mites are one of the most important pests of eggplant. They have up to 20 generations per year and are favored by excess nitrogen and dry and dusty conditions. Outbreaks are often caused by the use of broad-spectrum insecticides which interfere with the numerous natural enemies that help to manage mite populations. As with most pests, catching the problem early will mean easier control.
+
+</p>
+<br>
+<br>
+<h2>SYMPTOMS OF {{pred_output}}</h2>
+<p>
+Feeding injury often gives the top leaf surfaces a mottled or speckled, dull appearance. Leaves then turn yellow and drop. Large populations produce visible webbing that can completely cover the leaves.
+
+In the field, spider mites are favored by hot dry weather, which also aggravates injury by stressing the plant. Damage is often underestimated since the wounds and the pest are not apparent to our eyes without close inspection. Leaves become blotched with pale yellow, reddish brown spots ranging from small to large areas on both upper and lower leaf surfaces. Other symptoms caused by either severe or constant attack include distorted leaves, overall loss of plant vigor (in spite of adequate moisture and nutrition), whitening or spotting of leaves, yellowing of the plant or some of the leaves, and in some cases loss of foliage and death
+</p>
+<br>
+<br>
+<h2>Effects of {{pred_output}}</h2>
+
+<p>Sample plants by turning over leaves and with a hands-free magnifier (Optivisor) or hand lens, check for the presence of spider mites as well as symptoms or webbing. Adult females are approximately 1/50-inch long, slightly orange or pale green in color with two dark spots on their body. All mobile stages are able to pierce plant tissue with their mouth-parts and remove plant fluids. Saliva injected during feeding may also cause discoloration, necrosis or abnormalities on leaves, stems and fruits. Most spider mites are found on the underside of leaves.
+
+</p>
+<br>
+<br>
+
+<br>
+<h2>Control Effect of {{pred_output}}</h2>
+
+<p>
+Preventative releases of the predatory mite, Phytoseiulus persimilis, may suppress TSSM populations in greenhousese and vegetable fields, as they do in strawberry fields. Amblyseius fallicis is a predatory mite that is widely used in greenhouses. See New England Vegetable Guide on biological control in greenhouse bedding plants, Table 25. Scouting guidelines and biological control options for bedding plants.
+.</p>
+<br>
+<br>
+</div>
+
+</div>
+</div>
+</div>
+ <div class="container_outer_img">
+ <div class="img-inner">
+ 
+       </div>
+     </div>
+  </div>
+<div class="overlay"></div>
+
+</body>
+
+</html>

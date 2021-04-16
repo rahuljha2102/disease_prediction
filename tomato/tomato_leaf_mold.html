@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{pred_output}}</title>
+
+<style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --secondary-color: #151226;
+  --contrast-color: #BF307F;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: var(--contrast-color);
+}
+
+.container {
+  display: flex;
+  height:auto;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand .8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .8s ease;
+}
+
+.container_content {
+ width: 50%;
+}
+
+.container_content_inner {
+  width: 80%;
+  margin-left: 80px;
+}
+
+.container_outer_img {
+  margin: 50px;
+  width: 50%;
+  overflow: hidden;
+}   
+    
+.container_img {
+  width: 100%;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.par {
+  height: auto;
+  overflow: hidden;
+}
+
+p{
+  line-height: 30px;
+  transform: translateY(300px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+.btns {
+  height: 100%;
+  position: relative;
+  width: 150px;
+  overflow: hidden;
+}
+
+.btns_more {
+  background: transparent;
+  border: 1px solid var(--contrast-color);
+  border-radius: 50px;
+  padding: 8px 12px;
+  color: #BF307F;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 15px;
+  outline: none;
+  transform: translateY(50px);
+  animation: slideUp .8s ease-in-out  forwards 1s;
+}
+
+.title {
+  overflow: hidden;
+  height: auto;
+}
+
+h2 {
+    font-size: 25px;
+    color: var(--contrast-color);
+    margin-bottom: 20px;
+    transform: translateY(100px);
+    animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class= 'container'>
+<div class="container_content">
+
+<div class="title">
+  <h1>{{ pred_output }}</h1>
+<br>
+<br>
+<br>  
+</div>
+<div class="par">
+<h2>Introduction</h2>
+
+<p>
+Tomato leaf mold is a foliar disease that is especially problematic in greenhouse and high tunnels. It was first described in 1883 as a pathogen that causes leaf lesions. It is less common in the field compared to greenhouses and high tunnels. With the rise of high tunnel construction in New York State through assistance programs by the Natural Resources Conservation Service, tomato leaf mold is appearing more frequently. High tunnels allow for season extension of high value crops such as tomatoes, yet the structures are also conducive to the growth of tomato leaf mold, which favors humid, dry conditions. Despite the slower progression of disease compared to a pathogen such as Phytophthora infestans, management is still crucial because tomatoes are a high value crop and consistent yields are an important source of income for growers
+</p>
+<br>
+<br>
+<h2>SYMPTOMS OF {{pred_output}}</h2>
+<p>
+Tomato leaf mold is caused by a fungal pathogen called Passalora fulva (syn. Cladosporium fulvum). It is an ascomycete fungus that lives on living tomato leaves. The fungus produces conidia that infect the lower surfaces of leaves. Upon landing on leaves, the fungus lands and enters plant stomata used in gas exchange. The stomata become clogged and tomato plants cannot respire well, resulting in wilting, defoliation, and infection.
+
+Disease symptoms first appear after seven days as light green spots on leaves. Soon after, olive-green asexual conidia emerge, and eventually the spots become necrotic. Disease symptoms appear first on the lower leaves of tomato plants. Fruit production may not be severely hampered during the earlier stages of disease, but over time, disease severity increases and defoliation occurs. Proper identification of disease is important. Abiotic conditions such as magnesium deficiency and the beginning stages of other diseases can produce similar symptoms to tomato leaf mold.
+</p>
+<br>
+<br>
+<h2>Effects of {{pred_output}}</h2>
+
+<p>The pathogen spreads by wind or by water splash. A relative humidity greater than 85% triggers the germination of conidia. Thread-like hyphae then grow and spread across the leaf surface. A few days later, after additional growth, the fungus can enter the plant. The fungus can survive on infected plant debris and perhaps in soil, which could allow the fungus to survive from year-to-year in greenhouses and warmer climates. Infected seed could also facilitate the spread of the pathogen. Tools and workers may also inadvertently help facilitate the spread of the pathogen, enabling the pathogen to travel to new tomato plants.</p>
+<br>
+<br>
+
+
+</div>
+
+</div>
+</div>
+</div>
+ <div class="container_outer_img">
+ <div class="img-inner">
+ 
+       </div>
+     </div>
+  </div>
+<div class="overlay"></div>
+
+</body>
+
+</html>

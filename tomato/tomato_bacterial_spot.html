@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{pred_output}}</title>
+
+<style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --secondary-color: #151226;
+  --contrast-color: #BF307F;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: var(--contrast-color);
+}
+
+.container {
+  display: flex;
+  height:auto;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand .8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .8s ease;
+}
+
+.container_content {
+ width: 50%;
+}
+
+.container_content_inner {
+  width: 80%;
+  margin-left: 80px;
+}
+
+.container_outer_img {
+  margin: 50px;
+  width: 50%;
+  overflow: hidden;
+}   
+    
+.container_img {
+  width: 100%;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.par {
+  height: auto;
+  overflow: hidden;
+}
+
+p{
+  line-height: 30px;
+  transform: translateY(300px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+.btns {
+  height: 100%;
+  position: relative;
+  width: 150px;
+  overflow: hidden;
+}
+
+.btns_more {
+  background: transparent;
+  border: 1px solid var(--contrast-color);
+  border-radius: 50px;
+  padding: 8px 12px;
+  color: #BF307F;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 15px;
+  outline: none;
+  transform: translateY(50px);
+  animation: slideUp .8s ease-in-out  forwards 1s;
+}
+
+.title {
+  overflow: hidden;
+  height: auto;
+}
+
+h2 {
+    font-size: 25px;
+    color: var(--contrast-color);
+    margin-bottom: 20px;
+    transform: translateY(100px);
+    animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class= 'container'>
+<div class="container_content">
+
+<div class="title">
+  <h1>{{ pred_output }}</h1>
+<br>
+<br>
+<br>  
+</div>
+<div class="par">
+<h2>Introduction</h2>
+
+<p>
+Bacterial spot of tomato is a potentially devastating disease that, in severe cases, can lead to unmarketable fruit and even plant death.  Bacterial spot can occur wherever tomatoes are grown, but is found most frequently in warm, wet climates, as well as in greenhouses.  The disease is often an issue in Wisconsin.
+</p>
+<br>
+<br>
+<h2>SYMPTOMS OF {{pred_output}}</h2>
+<p>
+Bacterial spot can affect all above ground parts of a tomato plant, including the leaves, stems, and fruit.  Bacterial spot appears on leaves as small (less than ⅛ inch), sometimes water-soaked (i.e., wet-looking) circular areas.  Spots may initially be yellow-green, but darken to brownish-red as they age.  When the disease is severe, extensive leaf yellowing and leaf loss can also occur.  On green fruit, spots are typically small, raised and blister-like, and may have a yellowish halo.  As fruit mature, the spots enlarge (reaching a maximum size of ¼ inch) and turn brown, scabby and rough.  Mature spots may be raised, or sunken with raised edges.  Bacterial spot symptoms can be easily confused with symptoms of another tomato disease called bacterial speck.
+</p>
+<br>
+<br>
+<h2>Effects of {{pred_output}}</h2>
+
+<p>Bacterial spot of tomato is caused by Xanthomonas vesicatoria, Xanthomonas euvesicatoria, Xanthomonas gardneri, and Xanthomonas perforans.  These bacterial pathogens can be introduced into a garden on contaminated seed and transplants, which may or may not show symptoms.  The pathogens enter plants through natural openings (e.g., stomates), as well as through wounds.  Disease development is favored by warm (75° to 86°F), wet weather.  Wind-driven rain can contribute to more severe disease as the pathogens are splashed and spread to healthy leaves and fruit.  Bacterial spot pathogens can survive well in tomato debris, but they survive very poorly in soil when not associated with debris.</p>
+<br>
+<br>
+<h2>Control Measure for {{pred_output}}</h2>
+
+<p>A plant with bacterial spot cannot be cured.  Remove symptomatic plants from the field or greenhouse to prevent the spread of bacteria to healthy plants.  Burn, bury or hot compost the affected plants and DO NOT eat symptomatic fruit.  Although bacterial spot pathogens are not human pathogens, the fruit blemishes that they cause can provide entry points for human pathogens that could cause illness.</p>
+
+</div>
+
+</div>
+</div>
+</div>
+ <div class="container_outer_img">
+ <div class="img-inner">
+ 
+       </div>
+     </div>
+  </div>
+<div class="overlay"></div>
+
+</body>
+
+</html>

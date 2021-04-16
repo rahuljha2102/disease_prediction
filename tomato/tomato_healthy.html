@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="referrer" content="origin-when-cross-origin">
+    <script>//<![CDATA[
+      var s = false;
+      function l() {
+        setTimeout(f, 10000);
+        if (document.referrer) {
+          try {
+            var pm = /(^|&|\?)px=([^&]*)(&|$)/i;
+            var px = window.location.href.match(pm);
+            var rs = document.referrer;
+            if (px != null) {
+              if (rs.match(pm))
+                rs = rs.replace(pm, "$1px=" + px[2] + "$3");
+              else if (rs.indexOf("?") != -1)
+                rs = rs + "&px=" + px[2];
+              else
+                rs = rs + "?px=" + px[2];
+            }
+            history.replaceState({}, "Bing", rs);
+            window.addEventListener("pageshow", function(e) { if (e.persisted || (typeof window.performance != "undefined" && window.performance.navigation.type === 2)) window.location.reload(); });
+            s = true;
+            setTimeout(r, 10);
+            return;
+          } catch (e) {}
+        }
+        r();
+      }
+      function r() {
+        var u = "http://www.primevideo.com/?ref_=dvm_pds_amz_in_as_s_b_brand28|m_fQQR2NKbc_c75454108097564";
+        if (s)
+          window.location.href = u;
+        else
+          window.location.replace(u);
+      }
+      function f() {
+        document.getElementById("fb").style.display = "block";
+      }
+      //]]>
+    </script>
+  </head>
+  <body onload="l()">
+    <div id="fb" style="display: none">
+      Please <a href="https://www.bing.com:443/aclk?ld=e8UqYGemdXQVMu1PrBT54FUDVUCUzpL_uWyhMhVbwKXq7g7A6s978icAMiW1jb_9_KyyXHzxnJ6a8xHTuoyy1490ua-nwGXZ4Z2n54gnGF0-gqHa2mkBdbxqmnhjfjpqVwkmL9ymsUMhXkvjHZgDXURtJkJhq40wbT9EQcoE99c10qDIrs&amp;u=aHR0cCUzYSUyZiUyZnd3dy5wcmltZXZpZGVvLmNvbSUyZiUzZnJlZl8lM2Rkdm1fcGRzX2Ftel9pbl9hc19zX2JfYnJhbmQyOCU3Y21fZlFRUjJOS2JjX2M3NTQ1NDEwODA5NzU2NA&amp;rlid=3a5f5bebdca71cd0b0fb3ba62066ec06&amp;ntb=F">click here</a> if the page does not redirect automatically ...
+    </div>
+  </body>
+</html>

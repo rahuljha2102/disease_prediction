@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{pred_output}}</title>
+
+<style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --secondary-color: #151226;
+  --contrast-color: #BF307F;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: var(--contrast-color);
+}
+
+.container {
+  display: flex;
+  height:auto;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand .8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .8s ease;
+}
+
+.container_content {
+ width: 50%;
+}
+
+.container_content_inner {
+  width: 80%;
+  margin-left: 80px;
+}
+
+.container_outer_img {
+  margin: 50px;
+  width: 50%;
+  overflow: hidden;
+}   
+    
+.container_img {
+  width: 100%;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.par {
+  height: auto;
+  overflow: hidden;
+}
+
+p{
+  line-height: 30px;
+  transform: translateY(300px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+.btns {
+  height: 100%;
+  position: relative;
+  width: 150px;
+  overflow: hidden;
+}
+
+.btns_more {
+  background: transparent;
+  border: 1px solid var(--contrast-color);
+  border-radius: 50px;
+  padding: 8px 12px;
+  color: #BF307F;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 15px;
+  outline: none;
+  transform: translateY(50px);
+  animation: slideUp .8s ease-in-out  forwards 1s;
+}
+
+.title {
+  overflow: hidden;
+  height: auto;
+}
+
+h2 {
+    font-size: 25px;
+    color: var(--contrast-color);
+    margin-bottom: 20px;
+    transform: translateY(100px);
+    animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class= 'container'>
+<div class="container_content">
+
+<div class="title">
+  <h1>{{ pred_output }}</h1>
+<br>
+<br>
+<br>  
+</div>
+<div class="par">
+<h2>Introduction</h2>
+
+<p>
+Early blight is one of the most common tomato diseases, occurring nearly every season wherever tomatoes are grown.
+It affects leaves, fruits and stems and can be severely yield limiting when susceptible cultivars are used and weather is favorable.
+Severe defoliation can occur and result in sunscald on the fruit.
+Early blight is common in both field and high tunnel tomato production in Minnesota.
+</p>
+<br>
+<br>
+<h2>SYMPTOMS OF {{pred_output}}</h2>
+<p>
+Early blight can be caused by two different closely related fungi, Alternaria tomatophila and Alternaria solani. Alternaria tomatophila is more virulent on tomato than A. solani, so in regions where A. tomatophila is found, it is the primary cause of early blight on tomato. However, if A. tomatophila is absent, A. solani will cause early blight on tomato.
+
+Both pathogens can also infect potato, although A. solani is more likely to cause potato early blight than A. tomatophila. Both pathogens can also infect eggplant and several Solanaceous weeds including black nightshade (Solanum ptycanthum), and hairy nightshade (Solanum physalifolium)
+</p>
+<br>
+<br>
+<h2>Effects of {{pred_output}}</h2>
+
+<p>Initially, small dark spots form on older foliage near the ground.
+
+Leaf spots are round, brown and can grow up to half inch in diameter.
+Larger spots have target-like concentric rings. The tissue around spots often turns yellow.
+Severely infected leaves turn brown and fall off, or dead, dried leaves may cling to the stem.</p>
+<br>
+<br>
+
+<br>
+<h2>Control Effect of {{pred_output}}</h2>
+
+<p>
+Use pathogen-free seed, or collect seed only from disease-free plants.
+Rotate out of tomatoes and related crops for at least two years.
+Control susceptible weeds such as black nightshade and hairy nightshade, and volunteer tomato plants throughout the rotation.
+Fertilize properly to maintain vigorous plant growth. Particularly, do not over-fertilize with potassium and maintain adequate levels of both nitrogen and phosphorus.
+Avoid working in plants when they are wet from rain, irrigation, or dew.
+Use drip irrigation instead of overhead irrigation to keep foliage dry.
+Stake the plants to increase airflow around the plant and facilitate drying. Staking will also reduce contact between the leaves and spore-contaminated soil.
+.</p>
+<br>
+<br>
+</div>
+
+</div>
+</div>
+</div>
+ <div class="container_outer_img">
+ <div class="img-inner">
+ 
+       </div>
+     </div>
+  </div>
+<div class="overlay"></div>
+
+</body>
+
+</html>
