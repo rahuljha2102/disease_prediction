@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{{pred_output}}</title>
+
+<style>* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --secondary-color: #151226;
+  --contrast-color: #BF307F;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: var(--contrast-color);
+}
+
+.container {
+  display: flex;
+  height:auto;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  animation: expand .8s ease forwards;
+  background-color: var(--secondary-color);
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: all .8s ease;
+}
+
+.container_content {
+ width: 50%;
+}
+
+.container_content_inner {
+  width: 80%;
+  margin-left: 80px;
+}
+
+.container_outer_img {
+  margin: 50px;
+  width: 50%;
+  overflow: hidden;
+}   
+    
+.container_img {
+  width: 100%;
+  animation: slideIn 1.5s ease-in-out forwards;
+}
+
+.par {
+  height: auto;
+  overflow: hidden;
+}
+
+p{
+  line-height: 30px;
+  transform: translateY(300px);
+  animation: slideUp .8s ease-in-out forwards .8s;
+}
+
+.btns {
+  height: 100%;
+  position: relative;
+  width: 150px;
+  overflow: hidden;
+}
+
+.btns_more {
+  background: transparent;
+  border: 1px solid var(--contrast-color);
+  border-radius: 50px;
+  padding: 8px 12px;
+  color: #BF307F;
+  font-size: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-top: 15px;
+  outline: none;
+  transform: translateY(50px);
+  animation: slideUp .8s ease-in-out  forwards 1s;
+}
+
+.title {
+  overflow: hidden;
+  height: auto;
+}
+
+h2 {
+    font-size: 25px;
+    color: var(--contrast-color);
+    margin-bottom: 20px;
+    transform: translateY(100px);
+    animation: slideUp .8s ease forwards .5s;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(500px) scale(.2);
+  }
+  100% {
+    transform: translateX(0px) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(300px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes expand {
+  0% {
+    transform: translateX(1400px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+</style>
+</head>
+<body>
+
+<div class= 'container'>
+<div class="container_content">
+
+<div class="title">
+  <h1>{{ pred_output }}</h1>
+  
+<br>  
+</div>
+<div class="par">
+<h2>INTRODUCTION</h2>
+
+<p>
+Black rot is one of the most serious diseases of grapes in the eastern United States. Crop losses can range from 5 to 80 percent, depending on the amount of disease in the vineyard, the weather, and variety susceptibility. The fungus Guignardia bidwelli can infect all green parts of the vine. Most damaging is the effect on fruit. Later fruit infections can destroy many grapes, even the entire crop.
+</p>
+<br>
+<br>
+<h2>SYMPTOMS OF LATE BLIGHT</h2>
+<p>
+Infected leaves develop reddish-brown, circular spots (lesions) on the upper leaf surface. As the lesions mature, the center becomes brown and small, black, pimple-like fruiting bodies called pycnidia appear in the center. They are usually arranged in a loose ring just inside a dark border. Infected berries become dark brown and are covered with numerous black pycnidia on the surface. The berries eventually shrivel into hard, black mummies. Most serious fruit infections occur when the grape is pea sized or larger.
+The black rot fungus overwinters in mummified fruit on the vineyard floor or in old fruit clusters that hang in the vines. The fungus can also overwinter within cane lesions. Spores of the fungus are produced within the diseased fruit and infect leaves, blossoms, and young fruit during spring rains. Fruit infections occur from mid-bloom until the berries begins to color. Mature leaves and ripe fruit are not susceptible. Very few fruit or leaves are infected after late July, and none are infected after the end of August. Black rot infections depend on the temperature and the length of time the leaves are wet. Infections occur if susceptible tissue remains wet for a sufficient length of time, depending on temperature.
+
+</p>
+<br>
+<br>
+<h2>EFFECTS OF LATE BLIGHT</h2>
+
+<p>Infected prunings and mummified berries should be removed, burned, and/or buried in the soil before new growth begins in the spring. In vineyards with susceptible varieties or where black rot was a problem the previous year, early season fungicide sprays should be timed to prevent the earliest infections. Should infections become numerous, protecting against fruit rot is very difficult later in the growing season. Planting resistant varieties is strongly suggested.</p>
+<br>
+<br>
+<h2>CONTROL MEASURE FOR LATE BLIGHT</h2>
+
+<p>While you do have the option to start spraying a fungicide now to try to slow down disease progression, at this point in the season, it probably won't help much in salvaging the rest of the fruit for this year. However, taking the time to remove as much of the infected material this year as you can will make a big difference. Then start in with a good spray program early next year and you should be able to get good disease control.</p>
+
+</div>
+
+</div>
+</div>
+</div>
+ <div class="container_outer_img">
+ <div class="img-inner">
+ 
+       </div>
+     </div>
+  </div>
+<div class="overlay"></div>
+
+</body>
+
+</html>
